@@ -1,0 +1,433 @@
+/* general styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    color: #fcf9f4;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.center {
+    text-align: center;
+}
+
+/* first section */
+.first {
+    background-image: url(../../images/image1.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 100vh;
+}
+
+.first .page-logo {
+    margin-top: 77px;
+}
+
+.button-custom {
+    color: #a0a0ab;
+    border: none;
+    background: transparent;
+}
+.dropdown-custom {
+    margin: 10px 25px 0 0;
+}
+
+/* navigation section */
+.navigation {
+    background-color: #8587b3;
+}
+.navigation .nav-top-divider {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+.navigation .nav-top-divider .divider {
+    flex-grow: 1;
+}
+
+.navigation .nav-top-divider .logo {
+    padding: 0 21px;
+}
+
+.navbar-nav li {
+    padding-right: 12px;
+}
+
+.ruler {
+    border-color: #9c9fc2;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-center
+{
+    position: relative;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
+.navbar {
+    padding: 10px 0;
+    margin-bottom: 0;
+    background-color: #8587b3;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+} 
+
+.navbar.affix {
+    padding: 0;
+    background-color: #fff;
+}
+.navbar .navbar-header {
+    margin: 0 auto;
+    float: initial;
+}
+.navbar li a {
+    color: #fff!important;
+}
+.navbar.affix li a {
+    color: #000!important;
+}
+
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+    /* background-color: #ffffff;
+    color: #000000; */
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.affix ~ .container-fluid {
+   position: relative;
+   top: 50px;
+}
+
+/* experience section */
+
+.experience {
+    background-image: url(../../images/moon_big.png);
+    background-position: 70% 0;
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: 470px 470px;
+    background-color: #8587b3;
+    position: relative;
+}
+
+.experience:before {
+    content: "";
+    background-image: url(../../images/ship.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    position: absolute;
+    z-index: 77;
+    width: 100%;
+    height: 100%;
+}
+.experience .wave-1, .experience .wave-2, .experience .wave-3 {
+    position: absolute;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+}
+.experience .wave-1 {
+    background-image: url(../../images/wave1.png);
+    bottom: 0px;    
+    left: 0;
+    z-index: 69;
+    background-size: 100% 140px;
+}
+.experience .wave-2 {
+    background-image: url(../../images/wave2.png);
+    bottom: 19px;    
+    left: 0;
+    z-index: 68;
+}
+.experience .wave-3 {
+    background-image: url(../../images/wave3.png);
+    bottom: 43px;    
+    left: 0;
+    z-index: 67;
+}
+.experience .container .experience-text {
+    margin-top: 51px;
+}
+
+.dist-bottom {
+    padding-bottom: 90px;
+}
+
+.thumbnail-none {
+    background-color: transparent;
+    border: none;
+}
+
+.text-appearance {
+    z-index: 90;
+}
+/* experience section in small screen */
+.experience-small {
+    background-color: #8587b3;
+}
+
+/* service section */
+.services {
+    background-color: #2e2f41; 
+}
+
+.btn-change {
+    background: transparent;
+    color: #fcf9f4;
+    border-radius: 12px;
+}
+
+.border-red {
+    border: 1px solid #e0465a;
+}
+.border-saffron {
+    border: 1px solid #f89839;
+}
+.border-blue {
+    border: 1px solid #3a4869;
+}
+.border-grey {
+    border: 1px solid #3f4053;
+}
+
+/* portfolio section */
+.portfolio {
+    background-image: url(../../images/sun.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    background-position: 0 -60px;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+.portfolio .portfolio-text {
+    position: absolute;
+    bottom: -31px;
+    width: 100%;
+    text-align: center;
+    z-index: 33;
+}
+.portfolio:before {
+    content: "";
+    background-image: url(../../images/sands1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    z-index: 24;
+}
+.portfolio:after {
+    content: "";
+    background-image: url(../../images/sands2.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    z-index: 23;
+}
+.portfolio-container {
+    position: relative;
+    background-color: #dcad5d;
+    padding-top: 80px;
+    padding-bottom: 25px
+}
+.carousel-custom {
+    height: 100%;
+}
+.carousel-custom .custom-carousel-indicators {
+    bottom: -43px;
+}
+.carousel-custom .carousel-page > div {
+    padding: 0!important;
+}
+.carousel-custom .carousel-page .carousel-page-item {
+    background-color: #fff;
+    text-align: center;
+    margin: 1px;
+    min-height: 225px;
+}
+
+/* client section */
+.clients {
+    background-image: url(../../images/mountains.png);
+    background-color: #dcad5c; 
+    background-position: 100% 66%;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    position: relative;
+    height: 100vh; 
+    z-index: 22;
+}
+
+.clients:before {    
+    content: "";
+    background-image: url(../../images/city2.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    width: 100%;
+    height: 87%;
+    z-index: 23;
+}
+
+.clients:after {
+    content: "";
+    background-image: url(../../images/city1.png);
+    background-position: 85% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 24;
+}
+
+.clients-descriptions {
+    position: relative;
+}
+.clients-text {
+    position: absolute;
+    top: 190px;
+    width: 100%;
+    z-index: 33;
+}
+
+.clients-container {
+    position: relative;
+    background-color: #2e2f41;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.carousel .carousel-flow {
+    bottom: -100px;
+}
+
+.clients-customer {
+    background-color: #2e2f41;
+    padding: 100px 75px;
+}
+
+.align-none {
+    float: none;
+}
+
+.logo-padding, .logo-distance {
+    padding-top: 130px;
+}
+
+/* contact section */
+.contact {
+    color: #2e3041;
+    padding: 80px;
+}
+
+.form-custom {
+    border-radius: 8px;
+    background-color: #e5e5e5;
+    border: none;
+    box-shadow: none;
+    height: 40px;
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color: #2e3041;
+    /* text-align: left; */
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #2e3041;
+}
+
+[class$="form-custom"]::-webkit-input-placeholder {
+    color: #2e3041;
+}
+
+.btn-custom {
+    background-color: #fe231f;
+    border-color: #e5e5e5;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* footer section */
+.footer-ruler {
+    border-color: #d5d4d9;
+}
+.text-color {
+    color: #2e3041;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 900px) {
+
+    .experience .container .experience-text {
+        margin-top: 0;
+    }
+
+    .experience .wave-1 {
+        background-size: 100% 62px;
+    }
+
+    .experience {
+        background-position: 70% 0;
+        height: 100vh;  
+        background-size: 300px 300px;
+    }
+
+    .portfolio {
+        background-position: 0 -20px;
+    }
+
+    .portfolio .portfolio-text {
+        bottom: -48px;
+    }
+
+    .clients-text {
+        top: 70px;
+    }
+
+    .carousel-height .carousel-flow {
+        bottom: -70px;
+    }
+}
