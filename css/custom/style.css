@@ -186,6 +186,10 @@ body {
 .text-appearance {
     z-index: 90;
 }
+.header-margin {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
 /* experience section in small screen */
 .experience-small {
     background-color: #8587b3;
@@ -201,7 +205,23 @@ body {
     color: #fcf9f4;
     border-radius: 12px;
 }
+.btn-red-hover:hover {
+    background-color: #e0465a;
+    color: #fff;
+}
 
+.btn-saffron-hover:hover {
+    background-color: #f89839;
+    color: #fff;
+}
+.btn-blue-hover:hover {
+    background-color: #3a4869;
+    color: #fff;
+}
+.btn-grey-hover:hover {
+    background-color: #3f4053;
+    color: #fff;
+}
 .border-red {
     border: 1px solid #e0465a;
 }
@@ -314,6 +334,22 @@ body {
     z-index: 24;
 }
 
+.clients .cloud {
+    position: absolute;
+    background-position: 100% 56%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+}
+.clients .cloud {
+    background-image: url(../../images/clouds2.png);
+    /* bottom: -30px;     */
+    left: 0px;
+    right: 0px;
+    z-index: 68;
+}
+
 .clients-descriptions {
     position: relative;
 }
@@ -386,7 +422,13 @@ input[type="text"]::-webkit-input-placeholder {
     border-color: #e5e5e5;
     color: #ffffff;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 6px 14px;
+}
+.btn-custom:hover {
+    color: #fff;
+}
+.form-group {
+    margin-bottom: 5px;
 }
 
 /* footer section */
