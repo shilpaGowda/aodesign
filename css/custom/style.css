@@ -4,13 +4,20 @@ body {
     line-height: 1.8;
     color: #fcf9f4;
 }
-
 .white {
     color: #ffffff;
 }
-
 .center {
     text-align: center;
+}
+.text-size {
+    font-size: 3em;
+}
+.text-header {
+    font-size: 4em;
+}
+.sub-text {
+    font-size: 1.416em;
 }
 
 /* first section */
@@ -51,8 +58,8 @@ body {
     padding: 0 21px;
 }
 
-.navbar-nav li {
-    padding-right: 12px;
+.nav-distance {
+    padding-right: 55px;
 }
 
 .ruler {
@@ -101,6 +108,13 @@ body {
 .navbar li a {
     color: #fff!important;
 }
+.navbar li a:hover, .navbar li.active a{
+    color: #000 !important;
+    background-color: #fff !important;  
+    border-bottom: 2px solid #000;
+    /* padding-left: 0;
+    padding-right: 0;     */
+}
 .navbar.affix li a {
     color: #000!important;
 }
@@ -118,6 +132,12 @@ body {
 .affix ~ .container-fluid {
    position: relative;
    top: 50px;
+}
+.nav-text {
+    font-size: 1.25em;
+}
+.navbar-nav {
+    margin: 10px auto;  
 }
 
 /* experience section */
@@ -212,6 +232,10 @@ body {
 
 .btn-saffron-hover:hover {
     background-color: #f89839;
+    color: #fff;
+}
+
+.btn:focus {
     color: #fff;
 }
 .btn-blue-hover:hover {
@@ -344,7 +368,7 @@ body {
 }
 .clients .cloud {
     background-image: url(../../images/clouds2.png);
-    /* bottom: -30px;     */
+    /* background-repeat: repeat; */
     left: 0px;
     right: 0px;
     z-index: 68;
@@ -383,6 +407,26 @@ body {
 .logo-padding, .logo-distance {
     padding-top: 130px;
 }
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+  .image2 {
+    position: absolute;
+    top: 80px;
+    left: 98px;
+}
+
+.media-left, .media>.pull-left {
+    padding-right: 40px;
+} 
 
 /* contact section */
 .contact {
@@ -430,13 +474,21 @@ input[type="text"]::-webkit-input-placeholder {
 .form-group {
     margin-bottom: 5px;
 }
+.input-group-addon {
+    border-radius: 8px;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+}
 
 /* footer section */
 .footer-ruler {
     border-color: #d5d4d9;
 }
 .text-color {
-    color: #2e3041;
+    color: #2c2d30;
+}
+.pencil-custom {
+    padding-bottom: 40px;
 }
 
 /* media queries */
@@ -471,5 +523,8 @@ input[type="text"]::-webkit-input-placeholder {
 
     .carousel-height .carousel-flow {
         bottom: -70px;
+    }
+    .nav-distance {
+        padding-right: 20px;
     }
 }
