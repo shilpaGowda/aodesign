@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
         <link rel="stylesheet" href="css/custom/style.css">
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -29,7 +30,7 @@
                     <div class="col-md-12">
                         <div class="page-logo">
                             <img src="images/logobig.png" alt="logo" class="img-responsive center-block">
-                            <h2 class="center text-size">Welcome Adventurer</h2>
+                            <h2 class="center">Welcome Adventurer</h2>
                         </div>
                     </div>    
                 </div>    
@@ -48,26 +49,29 @@
                 </div>
             </div>
             <!-- navbar -->
-            <nav class="navbar navbar-default" data-spy="affix" data-offset-top="800">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                        </button>
+            <div id="nav">
+                <nav class="navbar navbar-default" data-spy="affix" data-offset-top="790">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                            </button>
+                            <div id="brand" href="/"><img src="images/ao_logo3.png" alt="" class="img-responsive header-logo"></div> 
+                        </div>   
                         <div class="collapse navbar-collapse navbar-center" id="myNavbar">
                             <ul class="nav navbar-nav">
-                                <li class="nav-distance"><a href="#experience" class="nav-text">EXPERIENCE</a></li>
-                                <li class="nav-distance"><a href="#services"   class="nav-text">SERVICES</a></li>
-                                <li class="nav-distance"><a href="#portfolio"  class="nav-text">PORTFOLIO</a></li>
-                                <li class="nav-distance"><a href="#clients"    class="nav-text">CLIENTS</a></li>
-                                <li><a href="#contact"    class="nav-text">CONTACT</a></li>
+                                <li class="nav-distance"><a href="#experience" class="">EXPERIENCE</a></li>
+                                <li class="nav-distance"><a href="#services"   class="">SERVICES</a></li>
+                                <li class="nav-distance"><a href="#portfolio"  class="">PORTFOLIO</a></li>
+                                <li class="nav-distance"><a href="#clients"    class="">CLIENTS</a></li>
+                                <li class=""><a href="#contact" class="">CONTACT</a></li>
                             </ul>
                         </div>    
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <!-- horizontal section -->
             <div class="container nav-top-divider-bottom">
                 <div class="row">
@@ -82,42 +86,46 @@
             <div class="container">
                 <div class="row experience-text">
                     <div class="col-md-5 text-appearance">
-                        <h1 class="header-margin text-size">Experience & Skills</h1>
-                        <p class="text-justify sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h1 class="header-margin">Experience & Skills</h1>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
             </div>
-            <div class="wave-1"></div>
-            <div class="wave-2"></div>
-            <div class="wave-3"></div>
+            <ul id="scene" class="scene">
+                <li class="layer" data-depth="0.60"><div class="wave-3 depth-30"></div></li>
+                <li class="layer" data-depth="0.80"><div class="wave-2 depth-20"></div></li>
+                <li class="layer" data-depth="1.00"><div class="wave-1 depth-10"></div></li>    
+            </ul>
         </section>
         <!-- experience section in small screen -->
         <section class="experience-small visible-sm" id="experience">
             <div class="container">
                 <div class="row experience-text">
                     <div class="col-sm-12">
-                        <h1 class="header-margin text-size">Experience & Skills</h1>
-                        <p class="text-justify sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <p class="text-justify sub-text"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <h1 class="header-margin">Experience & Skills</h1>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p class="text-justify"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <p class="text-justify sub-text">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        <p class="text-justify">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                         </p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="experience visible-sm">
-            <div class="wave-1"></div>
-            <div class="wave-2"></div>
-            <div class="wave-3"></div>
+            <ul id="scene" class="scene">
+                <li class="layer" data-depth="0.60"><div class="wave-3 depth-30"></div></li>
+                <li class="layer" data-depth="0.80"><div class="wave-2 depth-20"></div></li>
+                <li class="layer" data-depth="1.00"><div class="wave-1 depth-10"></div></li>    
+            </ul>
         </section>
         <!-- services section -->
         <section class="services" id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 dist-bottom">
-                        <h1 class="text-center text-header">Services</h1>
-                        <p class="text-center sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h1 class="text-center">Services</h1>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
                     <div class="col-md-12">
                         <div class="col-sm-6 col-md-3">
@@ -239,8 +247,8 @@
         <!-- portfolio section -->
         <section class="portfolio" id="portfolio">
             <div class="portfolio-text">
-                <h1 class="center text-header">Portfolio</h1>
-                <p class="center sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <h1 class="center">Portfolio</h1>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
         </section>
         <section class="portfolio-container">
@@ -253,13 +261,19 @@
                             <div class="item active">
                               <div class="row carousel-page">
                                   <div class="col-sm-4">
-                                      <div class="carousel-page-item"></div>
+                                      <div class="carousel-page-item">
+                                        <a href="images/manh.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img src="images/manh.jpg" alt="" class="" width="" height="225"></a>
+                                      </div>
                                   </div>
                                   <div class="col-sm-4">
-                                      <div class="carousel-page-item"></div>
+                                      <div class="carousel-page-item">
+                                        <a href="images/san.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img src="images/san.jpg" alt="" class="" width="" height="225"></a>
+                                      </div>
                                   </div>
                                   <div class="col-sm-4">
-                                      <div class="carousel-page-item"></div>
+                                      <div class="carousel-page-item">
+                                        <a href="images/brook.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img src="images/brook.jpg" alt="" class="" width="" height="225"></a>
+                                      </div>
                                   </div>
                               </div>
         
@@ -386,13 +400,15 @@
                 <div class="row">
                     <div class="clients-descriptions">
                         <div class="clients-text">
-                            <h1 class="center white text-header">Clients</h1>
-                            <p class="center white sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <h1 class="center white">Clients</h1>
+                            <p class="center white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> dolore magna aliqua. Ut enim ad minim veniam.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="cloud"></div>
+            <ul id="scene" class="scence">
+                <li class="layer" data-depth="0.00"><div class="cloud depth-40"></div></li>
+            </ul>
         </section>
         <section class="clients-container">
             <div class="container">
@@ -528,8 +544,8 @@
         <section class="contact" id="contact">
             <div class="container">
                 <div class="row">
-                    <h1 class="center text-size">Contact</h1>
-                    <p class="center sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <h1 class="center">Contact</h1>
+                    <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <div class="col-md-offset-3 col-md-6">
                         <form class="form-horizontal">
                             <div class="form-group">
@@ -579,5 +595,19 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>   
     <script src="js/custom/animation.js"></script>   
+    <!-- <script src="js/parallax.min.js"></script> -->
+    <script src="http://matthew.wagerfield.com/parallax/deploy/jquery.parallax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+    <script>
+        // Pretty simple huh?
+        // var scene = document.getElementById('scene');
+        // var parallax = new Parallax(scene);
+    </script>
 	</body>
 </html>

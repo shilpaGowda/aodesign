@@ -10,14 +10,8 @@ body {
 .center {
     text-align: center;
 }
-.text-size {
-    font-size: 3em;
-}
-.text-header {
-    font-size: 4em;
-}
-.sub-text {
-    font-size: 1.416em;
+li {
+    list-style-type: none;
 }
 
 /* first section */
@@ -108,12 +102,10 @@ body {
 .navbar li a {
     color: #fff!important;
 }
-.navbar li a:hover, .navbar li.active a{
+.affix li a:hover, .affix li.active a{
     color: #000 !important;
     background-color: #fff !important;  
     border-bottom: 2px solid #000;
-    /* padding-left: 0;
-    padding-right: 0;     */
 }
 .navbar.affix li a {
     color: #000!important;
@@ -123,13 +115,11 @@ body {
     top:0;
     width: 100%;
     z-index: 9999 !important;
-    /* background-color: #ffffff;
-    color: #000000; */
 }
 .navbar {
     margin-bottom: 0px;
 }
-.affix ~ .container-fluid {
+.affix ~ .container {
    position: relative;
    top: 50px;
 }
@@ -140,6 +130,15 @@ body {
     margin: 10px auto;  
 }
 
+#brand {
+    display: none;
+}
+
+.header-logo {
+    position: absolute;
+    top: 20px;
+    left: 72px;
+}
 /* experience section */
 
 .experience {
@@ -167,27 +166,33 @@ body {
     position: absolute;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
 }
 .experience .wave-1 {
     background-image: url(../../images/wave1.png);
-    bottom: 0px;    
-    left: 0;
-    z-index: 69;
-    background-size: 100% 140px;
+    background-position: 100% 55%;
+    background-size: 100% 15%;
+    bottom: 30px;    
+    left: -20px;
+    z-index: 75;
 }
 .experience .wave-2 {
     background-image: url(../../images/wave2.png);
+    background-position: 100% 50%;
+    background-size: 100% 18%;
     bottom: 19px;    
-    left: 0;
+    left: -20px;
+    right: 0;
     z-index: 68;
 }
 .experience .wave-3 {
     background-image: url(../../images/wave3.png);
+    background-position: 100% 50%;
+    background-size: 100% 20%;
     bottom: 43px;    
-    left: 0;
+    left: -20px;
     z-index: 67;
 }
 .experience .container .experience-text {
@@ -304,7 +309,7 @@ body {
     position: relative;
     background-color: #dcad5d;
     padding-top: 80px;
-    padding-bottom: 25px
+    padding-bottom: 50px;
 }
 .carousel-custom {
     height: 100%;
@@ -363,12 +368,13 @@ body {
     background-position: 100% 56%;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    width: 100%;
+    width: 99%;
     height: 100%;
 }
 .clients .cloud {
     background-image: url(../../images/clouds2.png);
-    /* background-repeat: repeat; */
+    /* background-position: 10% 50%; */
+    /* background-size: 50% 50%; */
     left: 0px;
     right: 0px;
     z-index: 68;
@@ -527,4 +533,89 @@ input[type="text"]::-webkit-input-placeholder {
     .nav-distance {
         padding-right: 20px;
     }
+    .header-logo {
+        left: 35px;
+    }
+    .experience .wave-1 {
+        background-position: 100% 100%;
+    }
+    .experience .wave-2 {
+        background-position: 100% 100%;
+    }
+    .experience .wave-3 {
+        background-position: 100% 100%;
+    }
+    
 }
+/* parallax css */
+    
+@keyframes wave {
+    0% {
+     -webkit-transform: rotateZ(0deg) translate3d(1%,0,0) rotateZ(0deg);
+     -moz-transform: rotateZ(0deg) translate3d(1%,0,0) rotateZ(0deg);
+     transform: rotateZ(0deg) translate3d(1%,0,0) rotateZ(0deg); }
+    
+    100% {
+     -webkit-transform: rotateZ(360deg) translate3d(1%,0,0) rotateZ(-360deg);
+     -moz-transform: rotateZ(360deg) translate3d(1%,0,0) rotateZ(-360deg);
+     transform: rotateZ(360deg) translate3d(1%,0,0) rotateZ(-360deg); } }
+
+@keyframes cloud {
+    0% {
+        -webkit-transform: rotateZ(0deg) translate3d(0,1%,0) rotateZ(0deg);
+        -moz-transform: rotateZ(0deg) translate3d(0,1%,0) rotateZ(0deg);
+        transform: rotateZ(0deg) translate3d(0,1%,0) rotateZ(0deg); }
+    
+    100% {
+        -webkit-transform: rotateZ(360deg) translate3d(0,1%,0) rotateZ(-360deg);
+        -moz-transform: rotateZ(360deg) translate3d(0,1%,0) rotateZ(-360deg);
+        transform: rotateZ(360deg) translate3d(0,1%,0) rotateZ(-360deg); } }
+            
+.depth-10 {
+    -webkit-animation: wave 8s 0.1s infinite linear;
+    -moz-animation: wave 8s 0.1s infinite linear;
+    animation: wave 8s 0.1s infinite linear;
+}
+
+.depth-20 {
+    -webkit-animation: wave 3s 0.1s infinite linear;
+    -moz-animation: wave 3s 0.1s infinite linear;
+    animation: wave 3s 0.1s infinite linear;
+} 
+
+.depth-30 {
+    -webkit-animation: wave 4.11111s 0.1s infinite linear;
+    -moz-animation: wave 4.11111s 0.1s infinite linear;
+    animation: wave 4.11111s 0.1s infinite linear;
+}
+
+.depth-40 {
+    -webkit-animation: cloud 4.11111s 0.1s infinite linear;
+    -moz-animation: cloud 4.11111s 0.1s infinite linear;
+    animation: cloud 4.11111s 0.1s infinite linear;
+}
+
+.wave.depth-10:after {
+    height: 144px; 
+}
+
+.scene {
+    min-height: 360px;
+ }
+    
+.scene,
+.layer {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0; 
+}
+    
+.scene {
+    min-height: 460px;
+    position: relative;
+    overflow: hidden; 
+}
+        
+
